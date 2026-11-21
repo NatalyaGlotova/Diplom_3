@@ -36,5 +36,5 @@ def authenticated_driver(driver_do):
         login_page.login(email=PersonData.USER_LOGIN, password=PersonData.USER_PASSWORD)
         login_page.wait_for_successful_login()
         
-    yield driver_do
+    return driver_do
 
